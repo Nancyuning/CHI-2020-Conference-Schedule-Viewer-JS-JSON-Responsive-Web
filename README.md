@@ -3,6 +3,11 @@
 > An interactive conference schedule web app built with JavaScript, dynamic JSON loading, and responsive CSS.
 
 ---
+##  Demo
+
+https://nancyuning.github.io/CHI-2020-Conference-Schedule-Viewer-JS-JSON-Responsive-Web/
+
+---
 
 ## Project Overview
 
@@ -40,6 +45,7 @@ Built as part of the **Web Application Development** coursework at University Co
 ├── style.css           # Stylesheet
 └── scheduling.json     # Conference schedule data
 ```
+
 
 ---
 
