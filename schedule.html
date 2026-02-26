@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <div class="container">
+            <h1>CHI 2020 Conference Schedule</h1>
+            <!-- <div id="id01">Loading...</div> -->
+
+            <div class="selection-area">
+                <h2>Please select Date and Time below.</h2>
+                <!-- date slot -->
+                <div class="form-group">
+                    <!-- label=word，option= slot word -->
+                    <label for="dateSelect">Choose a date:</label>
+
+                    <select id="dateSelect">
+                        <option value="">Please select a Date</option>
+                    </select>
+                </div> 
+                <!-- time slot -->
+                <div class="form-group">
+                    <label for="timeSelect">Choose a time slot:</label>
+                    <select id="timeSelect">
+                        <option value="">Please select a time slot</option>
+                    </select>
+                </div>
+
+                <!-- buttom -->
+                <button id="submit" onclick="showdetail()">Submit</button>
+
+            </div>
+
+            <!--  filter area -->
+            <div id="filterArea" class="filter-area" style="display:none;">
+                <h3>Filter Sessions by Type:</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="sessionType" value="all" checked onchange="filtertype()"> 
+                        All Sessions
+                    </label>
+                    <label>
+                        <input type="radio" name="sessionType" value="paper" onchange="filtertype()"> 
+                        Paper Sessions Only
+                    </label>
+                    <label>
+                        <input type="radio" name="sessionType" value="non-paper" onchange="filtertype()"> 
+                        Non-Paper Sessions
+                    </label>
+                </div>
+            </div>
+
+            <div id="result" class="results-area">
+
+            </div>
+            <div id="id02" class="spaced"></div>
+            <div id="id03" ></div>
+            <div id="id04"></div>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

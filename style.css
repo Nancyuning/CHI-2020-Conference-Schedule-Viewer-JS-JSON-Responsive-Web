@@ -1,0 +1,228 @@
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin: 6px 0 4px;
+  color: #2c3e50;
+  font-size: 1.05em;
+}
+
+h4 {
+  margin: 4px 0 10px;
+  color: #555;
+  font-weight: normal;
+  font-size: 0.95em;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* ── Main container ── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 30px 36px 40px;
+}
+
+/* ── Selection area ── */
+.selection-area {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  min-width: 140px;
+  color: #444;
+}
+
+select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 220px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76,175,80,0.15);
+}
+
+/* ── Submit button ── */
+button {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ── Filter area ── */
+#filterArea {
+  background-color: #eaf4ea;
+  border: 1px solid #b2dfb2;
+  padding: 14px 20px;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+#filterArea h3 {
+  margin: 0 0 10px;
+  font-size: 0.95em;
+  color: #2e7d32;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  font-weight: normal;
+  min-width: unset;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ── Results area ── */
+.results-area {
+  margin-top: 10px;
+}
+
+/* ── Session cards ── */
+.session-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #4CAF50;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  line-height: 1.7;
+  font-size: 15px;
+  transition: box-shadow 0.2s;
+}
+
+.session-card:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.session-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.05em;
+  color: #1a1a2e;
+}
+
+.session-card button {
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  padding: 5px 14px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  transition: background-color 0.2s;
+}
+
+.session-card button:hover {
+  background-color: #0069d9;
+}
+
+/* ── Info box (expanded submissions) ── */
+.info-box {
+  background-color: #f8f9fa;
+  border-left: 3px solid #4CAF50;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* ── Individual submission ── */
+.submission {
+  background-color: #fff;
+  border: 1px dashed #c0c0c0;
+  padding: 10px 14px;
+  margin-top: 10px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+.submission h3 {
+  margin: 0 0 5px;
+  font-size: 0.97em;
+  color: #2c3e50;
+}
+
+.submission span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.info-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* ── Status / message area ── */
+.spaced {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #666;
+  min-height: 18px;
+}
